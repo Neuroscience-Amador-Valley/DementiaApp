@@ -20,7 +20,7 @@ struct Mental: View {
                              "Inappropriate social behavior",
                              "Paranoia",
                              "Explosive behavior",]
-    @State var mChecks = [false, false, false, false, false, false, false, false, false, false]
+    @State var mChecks = [false, false, false, false, false, false, false, false, false]
     @State var newSymptom = false
     
     init() {
