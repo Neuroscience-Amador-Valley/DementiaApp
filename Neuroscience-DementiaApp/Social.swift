@@ -11,13 +11,22 @@ import SwiftUI
 struct Social: View {
     
     @Environment(\.presentationMode) var presentationMode
-    private let sSymptoms = ["Social Interaction Inability"]
-    @State var sChecks = [false]
+    private let sSymptoms = ["Inability to speak properly",
+                             "Slurring",
+                             "Inability to identify object",
+                             "Difficulty forming sentences",
+                             "Cognitive impairment",
+                             "Hostile behavior",
+                             "Isolation from others",
+                             "Unhealthy reliance on others",
+                             "Abnormal stress",
+                             "Abnormal fatigue"]
+    @State var sChecks = [false, false, false, false, false, false, false, false, false, false]
     @State var newSymptom = false
     
     init() {
-        UITableView.appearance().backgroundColor = #colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)
-        UITableViewCell.appearance().backgroundColor = #colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)
+        UITableView.appearance().backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.8804875016, blue: 0.7963053584, alpha: 1)
+        UITableViewCell.appearance().backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.8804875016, blue: 0.7963053584, alpha: 1)
         UITableView.appearance().tableFooterView = UIView()
     }
     
@@ -27,7 +36,7 @@ struct Social: View {
             NavigationView {
                 
                 ZStack {
-                    Color(#colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)).edgesIgnoringSafeArea(.all)
+                    Color(#colorLiteral(red: 0.9529411765, green: 0.8804875016, blue: 0.7963053584, alpha: 1)).edgesIgnoringSafeArea(.all)
                     
                     VStack {
                         
@@ -55,7 +64,7 @@ struct Social: View {
                                         }
                                     }
                                     
-                                }.listRowBackground(Color(#colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)))
+                                }.listRowBackground(Color(#colorLiteral(red: 0.9529411765, green: 0.8804875016, blue: 0.7963053584, alpha: 1)))
                             }
                         }
                         
