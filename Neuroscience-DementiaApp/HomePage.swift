@@ -103,6 +103,8 @@ struct HomePage: View {
                                 .background(Color(#colorLiteral(red: 0.9529411765, green: 0.8804875016, blue: 0.7963053584, alpha: 1)))
                                 .cornerRadius(25)
                                 
+                            }.sheet(isPresented: self.$social) {
+                                Social()
                             }
                             
                             Spacer()
