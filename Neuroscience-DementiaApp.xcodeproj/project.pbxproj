@@ -15,7 +15,7 @@
 		0D2E6BC624C4CF0E00E56DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2E6BC524C4CF0E00E56DDE /* Assets.xcassets */; };
 		0D2E6BC924C4CF0E00E56DDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2E6BC824C4CF0E00E56DDE /* Preview Assets.xcassets */; };
 		0D2E6BCC24C4CF0E00E56DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2E6BCA24C4CF0E00E56DDE /* LaunchScreen.storyboard */; };
-		0D98213C256342C000DD9DB6 /* HomeReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98213B256342C000DD9DB6 /* HomeReference.swift */; };
+		0DE14F3B2591AADD00ED4C27 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE14F3A2591AADD00ED4C27 /* SettingsView.swift */; };
 		0DEF9531251AC60C00E38173 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF9530251AC60C00E38173 /* HomePage.swift */; };
 		0DEF9534251AC76F00E38173 /* Physical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF9533251AC76F00E38173 /* Physical.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		0D2E6BC824C4CF0E00E56DDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D2E6BCB24C4CF0E00E56DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D2E6BCD24C4CF0E00E56DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D98213B256342C000DD9DB6 /* HomeReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReference.swift; sourceTree = "<group>"; };
+		0DE14F3A2591AADD00ED4C27 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0DEF9530251AC60C00E38173 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		0DEF9533251AC76F00E38173 /* Physical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physical.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,8 +69,8 @@
 				0D2E6BBC24C4CF0D00E56DDE /* AppDelegate.swift */,
 				0D2E6BBE24C4CF0D00E56DDE /* SceneDelegate.swift */,
 				0D2E6BC324C4CF0D00E56DDE /* ContentView.swift */,
+				0DE14F3A2591AADD00ED4C27 /* SettingsView.swift */,
 				0DEF9530251AC60C00E38173 /* HomePage.swift */,
-				0D98213B256342C000DD9DB6 /* HomeReference.swift */,
 				0DEF9533251AC76F00E38173 /* Physical.swift */,
 				0D0A1ABC25565A0900371495 /* NewSymptom.swift */,
 				0D2E6BC524C4CF0E00E56DDE /* Assets.xcassets */,
@@ -164,10 +164,10 @@
 				0DEF9531251AC60C00E38173 /* HomePage.swift in Sources */,
 				0D2E6BC224C4CF0D00E56DDE /* Neuroscience_DementiaApp.xcdatamodeld in Sources */,
 				0D2E6BBD24C4CF0D00E56DDE /* AppDelegate.swift in Sources */,
+				0DE14F3B2591AADD00ED4C27 /* SettingsView.swift in Sources */,
 				0D0A1ABD25565A0900371495 /* NewSymptom.swift in Sources */,
 				0D2E6BC424C4CF0D00E56DDE /* ContentView.swift in Sources */,
 				0D2E6BBF24C4CF0D00E56DDE /* SceneDelegate.swift in Sources */,
-				0D98213C256342C000DD9DB6 /* HomeReference.swift in Sources */,
 				0DEF9534251AC76F00E38173 /* Physical.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
