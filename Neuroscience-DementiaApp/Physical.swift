@@ -11,29 +11,29 @@ import SwiftUI
 struct Physical: View {
     
     @Environment(\.presentationMode) var presentationMode
-    private let pSymptoms = ["Having an unkempt appearance", "Inability to wash body", "Trouble putting on clothes", "Difficulty brushing teeth", "Inability to shave/comb hair", "Convulsions"] /// added 4 more and reordered
-    @State var pChecks = [false, false, false, false, false, false] /// added 4 more
+    private let pSymptoms = ["Having an unkempt appearance", "Inability to wash body", "Trouble putting on clothes", "Difficulty brushing teeth", "Inability to shave/comb hair", "Convulsions"]
+    @State var pChecks = [false, false, false, false, false, false]
     @State var newSymptom = false
     
-    init() { /// added
+    init() {
         UITableView.appearance().backgroundColor = #colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)
         UITableViewCell.appearance().backgroundColor = #colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)
         UITableView.appearance().tableFooterView = UIView()
     }
     
     var body: some View {
-        GeometryReader { geometry in /// new
+        GeometryReader { geometry in
             
-            NavigationView { /// new
+            NavigationView {
                 
                 ZStack {
-                    Color(#colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)).edgesIgnoringSafeArea(.all) /// new
+                    Color(#colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)).edgesIgnoringSafeArea(.all)
                     
                     VStack {
                         
-                        Text("Physical Symptoms").font(.largeTitle).fontWeight(.bold) /// added .bold
+                        Text("Physical Symptoms").font(.largeTitle).fontWeight(.bold)
                         Text("Select all that apply").font(.caption).foregroundColor(Color.blue)
-                            .padding(.top, geometry.size.height*0.013) /// added modifiers
+                            .padding(.top, geometry.size.height*0.013)
                         
                         List {
                             
@@ -42,20 +42,20 @@ struct Physical: View {
                                     
                                     Text(self.pSymptoms[i])
                                     
-                                    Spacer()  /// new
+                                    Spacer()
                                     
                                     Button (action: { self.pChecks[i].toggle() }) {
                                         if self.pChecks[i] {
                                             Image(systemName: "checkmark.square.fill")
-                                                .foregroundColor(Color.blue) /// new
+                                                .foregroundColor(Color.blue)
                                         }
                                         else {
                                             Image(systemName: "square.fill")
-                                                .foregroundColor(Color(#colorLiteral(red: 0.9339778938, green: 0.9339778938, blue: 0.9339778938, alpha: 1))) /// new
+                                                .foregroundColor(Color(#colorLiteral(red: 0.9339778938, green: 0.9339778938, blue: 0.9339778938, alpha: 1)))
                                         }
                                     }
                                     
-                                }.listRowBackground(Color(#colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1))) /// new
+                                }.listRowBackground(Color(#colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)))
                             }
                         }
                         
@@ -64,18 +64,18 @@ struct Physical: View {
                             HStack (alignment: .center) {
                                 
                                 Text("New Symptom")
-                                    .font(.system(size: geometry.size.width * 0.048)) /// new
-                                    .fontWeight(.bold) /// new
+                                    .font(.system(size: geometry.size.width * 0.048))
+                                    .fontWeight(.bold)
                                 Image(systemName: "plus")
                                     .frame(width: geometry.size.width * 0.05,
-                                           height: geometry.size.height * 0.05) /// new
+                                           height: geometry.size.height * 0.05)
                             }
-                            .padding() /// new
-                            .foregroundColor(Color(.white)) /// new
+                            .padding()
+                            .foregroundColor(Color(.white))
                             .frame(width: geometry.size.width * 0.5,
-                                   height: geometry.size.height * 0.063) /// new
-                                .background(Color.blue) /// new
-                                .cornerRadius(10) /// new
+                                   height: geometry.size.height * 0.063)
+                                .background(Color.blue)
+                                .cornerRadius(10)
                             
                         }.sheet(isPresented: self.$newSymptom) {
                             NewSymptom()
