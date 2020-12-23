@@ -39,7 +39,7 @@ struct Mental: View {
                     
                     VStack {
                         
-                        Text("Physical Symptoms").font(.largeTitle).fontWeight(.bold)
+                        Text("Mental Symptoms").font(.largeTitle).fontWeight(.bold)
                         Text("Select all that apply").font(.caption).foregroundColor(Color.blue)
                             .padding(.top, geometry.size.height*0.013)
                         
