@@ -65,7 +65,7 @@ struct Mental: View {
                                     
                                 }.listRowBackground(Color(#colorLiteral(red: 0.7541411519, green: 0.8313546777, blue: 0.9701576829, alpha: 1)))
                             }
-                        }
+                        }.frame(width: UIScreen.main.bounds.width*0.9)
                         
                         Button (action: { self.newSymptom = true }) {
                             

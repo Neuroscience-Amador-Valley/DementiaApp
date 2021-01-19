@@ -57,7 +57,7 @@ struct Physical: View {
                                     
                                 }.listRowBackground(Color(#colorLiteral(red: 0.7568627451, green: 0.8426002264, blue: 0.8870300651, alpha: 1)))
                             }
-                        }
+                        }.frame(width: UIScreen.main.bounds.width*0.9)
                         
                         Button (action: { self.newSymptom = true }) {
                             
